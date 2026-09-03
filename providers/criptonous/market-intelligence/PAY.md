@@ -45,7 +45,7 @@ Full table lives in live OpenAPI + `GET /.well-known/x402`.
 ## Spend-aware usage
 
 - **Start with `hermes.pulse` ($0.02)** before buying confluence or oracle SKUs — validates wallet + facilitator path with minimal spend.
-- **Prefer `session.24h` for agent loops** — fixed $9 for up to 12 consumes of SKUs ≤ $0.25 beats repeated unit buys.
+- **Do not buy `session.24h` ($9) to save money.** 12 unit buys at the $0.25 ceiling cost **$3**; cheap probes (`hermes.pulse` $0.02) are even lower. Use `session.24h` only if you want **one payment + one AccessPass** for up to 12 metered reads in 24h (less signing friction), not cheaper unit economics.
 - **Call `temple.catalog` once** to refresh prices/tags; do not re-buy catalog every turn.
 - **Pass `?symbol=SOL` (or similar)** only when the SKU is symbol-scoped; omit for pantheon/session packs.
 - **NFA boundary:** responses are intelligence/context. Never treat payloads as trade tickets, custody instructions, or guaranteed returns.
